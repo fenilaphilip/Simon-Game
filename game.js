@@ -15,6 +15,7 @@ function nextSequence() {
     .fadeIn(100);
 
   gamePattern.push(randomChosenColour);
+  level = level + 1;
   console.log(gamePattern);
 }
 
@@ -39,4 +40,15 @@ function animatePress(currentColour) {
   }, 100);
 }
 
-nextSequence();
+//  To start the game
+
+var gameStart = false;
+var level = 0;
+
+$(document).keypress(function () {
+  if (gameStart == false) {
+    nextSequence();
+    gameStart = true;
+    $("#level-title").text("Level " + level);
+  }
+});
