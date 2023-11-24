@@ -40,6 +40,20 @@ function animatePress(currentColour) {
   }, 100);
 }
 
+// Show instructions
+
+$("#instruction-guide").hide();
+$("#guide-game").click(function () {
+  $("#game-platform").hide();
+  $("#instruction-guide").show();
+  $("#level-title").hide();
+});
+$("#play-game").click(function () {
+  $("#instruction-guide").hide();
+  $("#game-platform").show();
+  $("#level-title").show();
+});
+
 //  To start the game
 
 var gameStart = false;

@@ -1,16 +1,33 @@
 body {
-  text-align: center;
   background-color: #011f3f;
 }
 
-#level-title {
+#level-title,
+#game-name {
+  text-align: center;
   font-family: "Press Start 2P", cursive;
   font-size: 3rem;
   margin: 5%;
   color: #fef2bf;
 }
 
-.container {
+#guide-game {
+  font-family: "Press Start 2P", cursive;
+  color: #fef2bf;
+  margin: 10px;
+  margin: 25px;
+  display: inline-block;
+  height: 50px;
+  width: auto;
+}
+#instruction-guide {
+  color: aliceblue;
+  font-size: 20px;
+  margin: 30px;
+  margin-top: 0;
+}
+#game-platform {
+  text-align: center;
   display: block;
   width: 50%;
   margin: auto;
